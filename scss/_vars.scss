@@ -1,0 +1,23 @@
+/**
+ * Colors
+ */
+$colors:  (
+        white:			#ffffff,
+        black:			#000000
+);
+
+@function colors($name: white) {
+    @return map-get($colors, $name);
+}
+
+/**
+ *	Brakpoints
+ */
+$size-mini:  		425px !default;
+$size-mobile: 		600px !default;
+$size-tablet:      	768px !default;
+$size-tablet-plus: 	769px !default;
+$size-medium:       960px !default;
+$size-desktop:      1024px !default;
+$size-desktop_plus: 1300px !default;
+$size-large:      	1600px !default;
