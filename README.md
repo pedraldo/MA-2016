@@ -24,7 +24,7 @@ p
 
 # ==> Ajoutez les chevrons < (si je les mettais c'était interpréter par le navigateur)
 
-Pour les images, une simple balise img src="chemin_vers_image"/> fera l'affaire. Le chemin de l'image démarre au même endroit que la page html (php) concernée.
+Pour les images, une simple balise img class="lazy" src="chemin_vers_image"/> fera l'affaire. Le chemin de l'image démarre au même endroit que la page html (php) concernée.
 
 Voilà je crois n'avoir rien oublié.
 Si ce n'est pas le cas dites le moi ou si vous avez des soucis, pareil parlez en moi ;)

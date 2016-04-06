@@ -9,7 +9,7 @@
 </head>
 
 <body class="article">
-	<div id="page-wrapper">
+	<div id="page-wrapper" class="lazy" data-original="./images/gitlanding.jpg">
 		<header id="header">
 			<h1>
 				<a href="index.html">Github pour les nuls</a>
@@ -66,44 +66,45 @@
 			</section>
 		</div>
 		<footer id="footer">
-			<div class="wrapper">
-				<div class="auteurs">
-					<ul>
-						<li>Auteurs</li>
-						<li>Pierre Peinado</li>
-						<li>Ernesto Markeliny</li>
-						<li>Benjamin Martel</li>
-						<li>Nicolas De Smet</li>
-					</ul>
-				</div>
-				<div class="projet">
-					<span class="contexte">Contexte</span>
-					<span class="description">Ce site a été réalisé dans le cadre d'un projet de Méthodes Agiles au sein de l'université Paul Sabatier de Toulouse</span>
-					<span class="prof">Encadrant : Franck Silvestre</span>
-					<div class="container">
-						<img src="./images/logoups.jpg"/>
-					</div>
-				</div>
-				<div class="copyright">
-					<span class="text">©Copyright - Tous droits réservés</span>
-				</div>
+	<div class="wrapper">
+		<div class="auteurs">
+			<ul>
+				<li>Auteurs</li>
+				<li>Pierre Peinado</li>
+				<li>Ernesto Markeliny</li>
+				<li>Benjamin Martel</li>
+				<li>Nicolas De Smet</li>
+			</ul>
+		</div>
+		<div class="projet">
+			<span class="contexte">Contexte</span>
+			<span class="description">Ce site a été réalisé dans le cadre d'un projet de Méthodes Agiles au sein de l'université Paul Sabatier de Toulouse</span>
+			<span class="prof">Encadrant : Franck Silvestre</span>
+			<div class="container">
+				<img src="./images/logoups.jpg"/>
 			</div>
-		</footer>
+		</div>
+		<div class="copyright">
+			<span class="text">©Copyright - Tous droits réservés</span>
+		</div>
+	</div>
+</footer>
 	</div>
 
 	<script type="text/javascript" src="js/vendor/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="js/vendor/jquery.lazyload.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 
 	<div id="menu">
-		<ul>
-			<li><a href="">Accueil</a></li>
-			<li><a href="installconfig.html">Installation / Configuration</a></li>
-			<li><a href="versionprojet1.html">Versioner son projet (1)</a></li>
-			<li><a href="versionprojet2.html">Versioner son projet (2)</a></li>
-			<li><a href="astuces.html">Astuces</a></li>
-		</ul>
-		<a href="#" class="close"></a>
-	</div>
+	<ul>
+		<li><a href="">Accueil</a></li>
+		<li><a href="installconfig.html">Installation / Configuration</a></li>
+		<li><a href="versionprojet1.html">Versioner son projet (1)</a></li>
+		<li><a href="versionprojet2.html">Versioner son projet (2)</a></li>
+		<li><a href="astuces.html">Astuces</a></li>
+	</ul>
+	<a href="#" class="close"></a>
+</div>
 </body>
 
 </html>

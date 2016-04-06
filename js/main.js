@@ -33,4 +33,20 @@ $(document).ready(function() {
 		}, 1000);
 		return false;
 	});
+
+	$("div.lazy").lazyload({
+		effect : "fadeIn"
+	});
+
+	$("img.lazy").lazyload({
+		effect : "fadeIn"
+	});
+});
+
+$("div.lazy").lazyload({
+	effect : "fadeIn"
+});
+
+$("img.lazy").lazyload({
+	effect : "fadeIn"
 });
