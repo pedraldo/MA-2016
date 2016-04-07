@@ -32,15 +32,97 @@
 		<div class="section-container">
 			<section class="section">
 				<div class="wrapper">
-					<div class="title">Créer un projet</div>
-					<div class="subtitle">Little useful subtitle</div>
+					<div class="title">Commande de base Git</div>
+					<div class="subtitle">Introduction</div>
 					<div class="text">
 					<p>
-						Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+						Les 3 éléments fondamentaux de git:
+						<ul>
+							<li>
+								Le répertoire de travail (Working directory)
+							</li>
+							<li>
+								La zone d’embarquement(Staging area)
+							</li>
+							<li>
+								Le repository
+							</li>
+						</ul>
 					</p>
 
 					<p>
-						Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+						Le répertoire de travail vous permet d’apporter vos modifications sur les differents fichiers du projet.
+					</p>
+					<p>
+						La zone d’embarquement que certains appellent également index vous permet d’y placer les fichiers dont vous voulez valider, les modifications apportées.
+					</p>
+					<p>
+						Enfin repository contient les modifications validées.
+					</p>
+					</div>
+					<div class="subtitle">Initialisation d’un dépôt git dans un répertoire existant</div>
+					<div class="text">
+					<p>
+						<img class="lazy" src="./images/cdb1.png"/>
+					</p>
+					<p>
+						Cette commande permet de créer pour la toute première fois un depôt ou un repository git pour la gestion des versions du code tout au long du projet.
+						Il suffit de se placer dans le répertoire dans lequel on souhaite travailler pour le projet. Cela créé un répertoire git qui va contenir toutes les actions réalisées sur le projet. Dans ce répertoire on retrouve les 3 éléments décrit ci-dessus.
+
+					</p>
+					</div>
+					<div class="subtitle">Validation des modifications</div>
+					<div class="text">
+					<p>
+						<img class="lazy" src="./images/cdb2.png"/>
+					</p>
+					<p>
+						Afin de valider les modifications que vous avez apportées. Cette commande va enregistrer les modifications dans le repository et les valider. Le message permet de préciser quel genre de modification vous avez apporté au projet pour que les autres collaborateurs comprennent quelles ont été vos modifications. Ceci vous permet également de vous y référer ultérieurement.
+					</p>
+					</div>
+					<div class="subtitle">Ajout de fichiers dans l’index ou zone d’embarquement (staging area)</div>
+					<div class="text">
+					<p>
+						<img class="lazy" src="./images/cdb3.png"/>
+					</p>
+					<p>
+						Avant de faire un commit, il vous faut d’abord ajouter les fichiers dans l’index. Cette commande vous permet de faire ça. Vous pouvez également faire tout simplement "<i>git add .</i>" . Cette commande permet d’ajouter les fichiers se trouvant dans le repertoire de travail (working directory) à l’index.
+					</p>
+					</div>
+					<div class="subtitle">Clonage d’un repository git existant</div>
+					<div class="text">
+					<p>
+						<img class="lazy" src="./images/cdb4.png"/>
+					</p>
+					<p>
+						Vous pouvez également cloner un repository git existant au lieu de s'en créer un nouveau(git init). <i>Url</i> precise où se trouve le dépôt distant que l’on veut cloner (en SSH).
+					</p>
+					</div>
+					<div class="subtitle">Vérifier l’état des fichiers</div>
+					<div class="text">
+					<p>
+						<img class="lazy" src="./images/cdb5.png"/>
+					</p>
+					<p>
+						Cette commande permet de voir dans quel etat sont les fichiers. Dans le repertoire de travail, dans la zone d’embarquement (prêts à être commités), etc…
+					</p>
+					</div>
+					<div class="subtitle">Pousser son travail sur un dépôt distant</div>
+					<div class="text">
+					<p>
+						<img class="lazy" src="./images/cdb6.png"/>
+					</p>
+					<p>
+						En supposant que vous disposez d'un depôt distant comme GitHub par exemple, cette commande vous permet d’envoyer vos modifications validées vers ce dépôt et de les y enregistrer.
+					</p>
+					</div>
+					<div class="subtitle">Récupérer le changement</div>
+					<div class="text">
+					<p>
+						<img class="lazy" src="./images/cdb7.png"/>
+					</p>
+					<p>
+						Par opposition à "<i>git push</i>" que nous avons vu précédemment, cette commande vous permet de récupérer le changement qu’il y a eu lieu sur le dépôt distant.
 					</p>
 					</div>
 				</div>
