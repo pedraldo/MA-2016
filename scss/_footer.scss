@@ -1,0 +1,98 @@
+#footer {
+	background-color: rgba(29, 36, 42, 0.9);
+	padding: 20px 60px;
+
+	.wrapper {
+		color: colors(white);
+		font-family: Helvetica Neue;
+		font-size: 16px;
+		font-weight: 300;
+		text-align: center;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		letter-spacing: 1.8px;
+		.auteurs, 
+		.projet, 
+		.copyright {
+			width: 50%;
+    		opacity: 0.6;
+
+    		@include respond(to($size-mobile)) {
+    			width: 100%;
+    		}
+		}
+		.auteurs {
+
+			@include respond(to($size-mobile)) {
+				margin-bottom: 40px;
+			}
+
+			ul {
+				list-style: none;
+				width: 50%;
+				margin: auto;
+				text-align: left;
+ 
+				@include respond(to($size-mobile)) {
+					width: 100%;
+					padding: 0;
+				}
+
+				li {
+					padding: 20px 0;
+					border-bottom: 1px dashed rgba(255,255,255,0.8);
+
+					&:first-child {
+						text-transform: uppercase;
+						margin-bottom: 20px;
+						border-bottom: 2px solid rgba(255,255,255,0.8);
+					}
+				}
+			}
+		}
+		.projet {
+			.contexte {
+				text-transform: uppercase;
+				margin-bottom: 35px !important;
+				padding: 20px 0;
+				border-bottom: 2px solid rgba(255,255,255,0.8);
+			}
+			.description {
+				line-height: 20px;
+				margin-bottom: 20px !important;
+			}
+
+			.contexte, .description, .prof, .container {
+				width: 70%;
+				display: block;
+				margin: auto;
+				text-align: left;
+
+				@include respond(to($size-mobile)) {
+					width: 100%;
+				}
+			}
+
+			.prof {
+				margin-bottom: 30px;
+			}
+
+			.container {
+
+				img {
+					height: 100px;
+
+					@include respond(to($size-tablet)) {
+						height: 80px;
+					}
+				}
+			}
+		}
+		.copyright {
+			margin: auto;
+			padding-top: 60px;
+			font-size: 12px;
+		}
+	}
+}

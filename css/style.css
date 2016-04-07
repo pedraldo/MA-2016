@@ -55,10 +55,7 @@ $from-large:          from($size-large);*/
  * large >        1300px
  */
 body {
-  margin: 0 !important;
-  background-image: url("../images/gitlanding.jpg");
-  background-repeat: no-repeat;
-  background-size: cover; }
+  margin: 0 !important; }
 
 #page-wrapper {
   background-image: url("../images/gitlanding.jpg");
@@ -177,6 +174,8 @@ body {
       @media screen and (max-width: 424px) {
         .section .wrapper .text {
           font-size: 12px; } }
+      .section .wrapper .text img {
+        max-width: 100%; }
       .section .wrapper .text p {
         position: relative; }
         .section .wrapper .text p ul, .section .wrapper .text p ol {
