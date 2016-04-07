@@ -32,31 +32,41 @@
 		<div class="section-container">
 			<section class="section">
 				<div class="wrapper">
-					<div class="title">Introduction</div>
-					<div class="subtitle">Little useful subtitle</div>
+					<div class="title">Astuces pour rendre la vie plus facile</div>
+					<div class="subtitle">Auto-Complétion</div>
 					<div class="text">
 					<p>
-						Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+						Si vous utilisez Windows vous l’avez déjà installé avec Bash Git. Si vous utilisez MacOS ou Linux vous en aurez peut être besoin cela facilite la vie.
 					</p>
-
 					<p>
-						Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+						Pour l’avoir c’est simple, vous devez télécharger le code source à cette <a href="https://github.com/git/git/blob/master/contrib/completion/git-completion.bash">adresse</a>.
+					</p>
+					<p>
+						<b>POUR UN UTILISATEUR :</b>
+						Vous devez ensuite l'ajouter dans votre répertoire personnel en le renommant: ".git-completion.bash" et ajouter cette ligne à votre fichier ".bashrc" : <b>"source ~/.git-completion.bash"</b>
+						<i>Ne pas prendre les guillemets en compte</i>
+					</p>
+					<p>
+						<b>POUR TOUS LES UTILISATEURS :</b>
+						Vous devez copier le fichier de git en le nommant : "git-completion.bash" et l'ajouter au répertoire <i>/etc/bash_completion.d</i> pour Linux et au répertoire <i>/opt/local/etc/bash_completion.d</i> pour MacOS
+					</p>
+					<p>
+						Pour utiliser l'auto complétion c'est simple il suffit d'appuyer sur la touche “tab” lorsque que vous commencer un mot. Le terminal va vous proposer automatiquement tous les choix disponibles avec le début de votre commande ou vous écrire directement la commande s'il n'y en a qu'une. Voici un exemple : 
+					</p>
+					<img class="lazy" src="./images/a1.png"/>
+					<p>
+						Sur l'image précédante, il existe trois commandes quand on tape "<i>git co</i>"" donc on nous les propose mais si on tape directement "<i>git com</i>"" alors le fait d'appuyer sur "tab" va compléter la commande "<i>git commit</i>"
 					</p>
 					</div>
-				</div>
-			</section>
-			<section class="section">
-				<div class="wrapper">
-					<div class="title">Introduction</div>
-					<div class="subtitle">Little useful subtitle</div>
+					<div class="subtitle">Les Alias</div>
 					<div class="text">
 					<p>
-						Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+						Les alias sont fait pour les flemards. Si vous avez la flemme de taper la commande en entier vous pouvez donc créer des alias.
 					</p>
-
 					<p>
-						Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+						Vous pouvez même remplacer des commande avec des paramètres par par exemple deux lettres. Voici quelques exemples :
 					</p>
+					<img class="lazy" src="./images/a2.png"/>
 					</div>
 				</div>
 			</section>
