@@ -1,30 +1,34 @@
 # MA-2016
 
-#Consignes pour intégrer le contenu dans une page HTML
-#Tous les exemples sont trouvables dans installconfig.html (php)
+Nom : Git pour les nuls
+    => Description : Manuel pour découvrir GitHub et apprendre à utiliser les fonctionnalités de base
+    
+Le dossier de suivi du projet se trouve ici: https://drive.google.com/drive/folders/0B01TRV78OiSbQmFoa3p1ckRGMEk
 
-Tout d'abord, bien vérifier qu'on se trouve sur la bonne page (et oui c'est important)
-Ensuite, tout le contenu va se placer dans la balise div de classe "section-container"
+Etat du monde : 
+    Il existe aujourd’hui une documentation officielle GitHub (en anglais) permettant de trouver les différentes commandes qui aideront à initialiser et gérer un projet sur GitHub. Le but de notre guide est de créer un HOWTO en français décrivant les étapes fondamentales pour gérer son code sur GitHub. La documentation sur GitHub est bien réalisée et très complètes mais présente des inconvénients importants pour : 
+la documentation est entièrement en anglais
+il est possible mais compliqué de trouver l’acheminement pas à pas pour mettre en place et maintenir son versionnage de code via les commandes git
 
-Vous pouvez si vous le souhaiter créer différentes sections par pages qui seront séparées par un trait horizontal. Chaque section est représenté par la balise section de classe "section" (je peux pas faire plus explicite ^^). La div "wrapper" doit toujours être juste en dssous !!
+Objectifs : 
+Faire découvrir l’interface GitHub
+Apprendre à utiliser les principales commandes de git pour versionner son code
+Comprendre les concepts basiques de la gestion de version (repository, branches, merges, push, pull …)
+Fournir une documentation basique en français
 
-Ensuite si vous voulez mettre un titre à votre section (ce qui est mieux), dans la div "wrapper" encapsuler votre titre comme ceci : div class="title">Titre /div>
-De même pour un sous-titre (en dessous de la div "title": div class="subtitle">Little useful subtitle /div>
 
-Tout ce qui concerne du texte en masse se passe dans la balise div de classe "text". Essayer de faire des paragraphes que vous encapsulerez dans des balises p.
+Rôles impliqués : 
+Client (MOA) : Franck Sylvestre
+Utilisateurs
+Equipe de développement (MOE) : 
+DE SMET Nicolas
+MARTEL Benjamin
+MARKELINY Ernesto
+PEINADO Pierre
+Product Owner et Scrum master : un membre de l’équipe de développement, changera à chaque sprint 
 
-Si le contenu comporte des listes voici un exemple :
-p
-	ul>
-		li>premier element/li>
-		li>deuxieme element/li>
-		li>.../li>
-	/ul>
-/p>
 
-# ==> Ajoutez les chevrons < (si je les mettais c'était interpréter par le navigateur)
+Thèmes (features) : 
+Le guide sera sous la forme d’un site internet
+Le site utilisera un template HMTL 5
 
-Pour les images, une simple balise img class="lazy" src="chemin_vers_image"/> fera l'affaire. Le chemin de l'image démarre au même endroit que la page html (php) concernée.
-
-Voilà je crois n'avoir rien oublié.
-Si ce n'est pas le cas dites le moi ou si vous avez des soucis, pareil parlez en moi ;)
