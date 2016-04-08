@@ -1,0 +1,62 @@
+body.article {
+	#page-wrapper {
+		#banner {
+			height: 50vh;
+			@include respond(to($size-tablet)) {
+				@include respond($landscape) {
+					height: 100vh;
+				}
+			}
+		}
+		.section-container {
+			.section {
+				padding: 0;
+				.wrapper {
+					position: relative;
+					.subtitle {
+						text-align: left;
+					    font-family: Helvetica Neue;
+					    font-weight: 200;
+					    font-size: 20px;
+					    text-transform: uppercase;
+					    letter-spacing: 6px;
+					    color: grey;
+					    @include respond(to($size-mobile)) {
+					    	font-size: 18px;
+					    	letter-spacing: 3px;
+					    }
+
+					    @include respond(to($size-mini)) {
+					    	font-size: 16px;
+					    	letter-spacing: 1px;
+					    }
+					}
+					&:before {
+						content: '';
+					    position: absolute;
+					    left: 10%;
+					    right: 10%;
+					    top: 0;
+					    height: 2px;
+					    background-color: lightgrey;						
+					}
+				}
+				&:first-child {
+					.wrapper:before {
+						display: none;
+					}
+				}
+			}
+			.prevnext {
+				position: relative;
+			    height: 120px;
+			    background-color: white;
+			    padding: 0 10%;
+
+			    @include respond(to($size-tablet)) {
+			    	height: 200px;
+			    }
+			}
+		}
+	}
+}
