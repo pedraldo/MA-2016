@@ -1,0 +1,142 @@
+/**
+ * Define font family
+ */
+
+
+/**
+ * Utils
+ */
+@mixin clearfix() {
+    &:after {
+        content: ' '; // 1
+        display: table; // 2
+        clear: both;
+    }
+}
+
+/**
+ * List reset
+ */
+@mixin list-reset() {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    list-style-image: none;
+}
+
+/**
+ * Ellipsis
+ */
+@mixin ellipsis($width : '', $display: inline-block) {
+    @if $width != '' {
+        width: $width;
+    }
+    display: $display;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+/**
+ * Debug purpose only
+ */
+@mixin outline($color:red){
+    outline:1px solid $color;
+    outline-offset:-1px;
+
+}
+
+/**
+ * px to em with context managment
+ */
+@function em($px, $base: 10px) {
+    @return ($px / $base) * 1em;
+}
+
+@mixin fullSize($size: 0) {
+    content: "";
+    position: absolute;
+    top: $size;
+    left: $size;
+    right: $size;
+    bottom: $size;
+}
+
+/**
+ *  Social buttons
+ *
+ */
+@mixin socialButton($size: 50px) {
+    display: block;
+    position: relative;
+    width: $size;
+    height: $size;
+    padding: 12px;
+
+    @include border-hover(1, 5);
+
+    .icon {
+        @include fullSize();
+        fill: colors(white);
+        width: 50%;
+        height: 50%;
+        top: 25%;
+        left: 25%;
+    }
+}
+
+/**
+ *  Zero width font replace
+ *
+ */
+@mixin white-space-clean( $font: $mini_hl ) {
+    font-family: $no-space;
+    & > * {
+        font-family: $font;
+    }
+}
+
+/**
+ * reponsive fontsize
+ * small >        420px
+ * mobile >       600px
+ * tablet >       767px
+ * medium >       960px
+ * desktop >      1024px
+ * large >        1300px
+ */
+@mixin setFontSize($large_font: 1em, $desktop_font: 'auto', $medium_font: 'auto', $tablet_font: 'auto', $mobile_font: 'auto', $small_font: 'auto') {
+    @include respond(from($size-desktop_plus)) {
+        font-size: $large_font;
+    }
+
+    @if $desktop_font != 'auto' {
+        @include respond(from($size-desktop), to($size-desktop_plus)) {
+            font-size: $desktop_font;
+        }
+    } 
+    @if  $medium_font != 'auto' {
+        @include respond(from($size-medium), to($size-desktop)) {
+            font-size: $medium_font;
+        }
+    } 
+    @if  $tablet_font != 'auto' {
+        @include respond(from($size-tablet), to($size-medium)) {
+            font-size: $tablet_font;
+        }
+    } 
+    @if  $mobile_font != 'auto' {
+        @include respond(from($size-mobile), to($size-tablet)) {
+            font-size: $mobile_font;
+        }
+    } 
+    @if  $small_font != 'auto' {
+        @include respond(to($size-mobile)) {
+            font-size: $small_font;
+        }
+    }
+}
+
+
+

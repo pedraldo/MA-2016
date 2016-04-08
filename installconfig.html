@@ -52,7 +52,7 @@
 
 					<p>
                         Vu que nous débutons, nous allons commencer avec un compte simple. 
-                        Rendez vous donc sur <a href="https://github.com">la page d'acceuil </a> : <br/>
+                        Rendez vous donc sur <a href="https://github.com">la page d'accueil </a> : <br/>
                         <img class="lazy" src="./images/ccg1.png"/> <br/><br/>
                         Il ne vous reste plus qu’à vous trouver un identifiant (1), 
                         renseigner votre adresse mail (2), vous trouver un mot de passe (3) et on valide (4) ! 
@@ -149,6 +149,114 @@
 						<b>Remarque :</b> si vous avez déjà installé MacPort sur votre mac, vous pouvez installer git avec cette commande :
 					</p>
 					<img class="lazy" src="./images/macport-install-git.png"/>
+					</div>
+				</div>
+			</section>
+			<section class="section">
+				<div class="wrapper">
+					<div class="title">Configuration Git</div>
+					<div class="text">
+						<p>
+							Vous avez la possiblité de spécifier les paramètres de configuration de Git grâce à la commande <span class="commande">git config</span>. Nous vous conseillons encore une fois de configurer Git après avoir créer votre compte Github, dans le but d’avoir certaines configurations similaires.
+						</p>
+
+						<p>
+							Grâce à cette commande et aux divers paramètres qu’elle propose, il possible de configurer beaucoup de paramètres dans le but de personnaliser votre utilisation de Git, principalement au niveau client. Dans notre cas, nous allons vous présenter quelques configurations qui sont basiques et pratiques pour une première utilisation de Git.
+						</p>
+						<br><br>
+					</div>
+					<div class="subtitle">Configuration du nom et de l’adresse mail associée à Git</div>
+					<div class="text">
+						<p>
+							La première chose à faire est de configurer votre nom est votre adresse email. Il est donc conseiller de renseigner votre prénom et votre nom (pour le nom), et la même adresse email que vous avez resneigné sur Github. Voici un exemple : 
+						</p>
+						<img class="lazy" src="images/git-config.png"/>
+						<p>
+							Si vous souhaitez afficher les configurations globales, utiliser la commande <span class="commande">git config --global</span>
+						</p>
+						<br><br>
+					</div>
+					<div class="subtitle">Configuration de la couleur du texte dans le terminal
+					</div>
+					<div class="text">
+						<p>
+							Une configuration plutôt utile que vous pouvez mettre en place est la coloration syntaxique liée à git. Différents codes couleur seront affectés en fonction de l’état de versionage d’un fichier (commité ou non, en attente de push). Vous comprendrez ces notions dans la suite de ce guide.
+							<br>En attendant voici la commande pour activer la coloration syntaxique : 
+						</p>
+						<img class="lazy" src="images/gitconfigcolor.png"/>
+					</div>
+					<div class="subtitle">Génération des clés publiques SSH
+					</div>
+					<div class="text">
+						<p>
+							Les clés SSH sont un moyen d'identifier les ordinateurs de confiance sans impliquer les mots de passe. Les serveurs Git utilisent ce genre d’authentification. Vous pouvez générer une clé SSH et ajouter la clé publique à votre compte GitHub en suivant les procédures décrites dans cette section.
+							<br>Si vous souhaitez en savoir plus si le concept et l’utilisation des clés SSH, voici un <a href="http://www.git-attitude.fr/2010/09/13/comprendre-et-maitriser-les-cles-ssh/">lien</a> utile.
+						</p>
+						<p>
+							Le processus de génération de clé SSH est identique sur tous les systèmes d’exploitation.
+						</p>
+						<p>
+							Tout d’abord, vérifiez que vous n’avez pas déjà créer de clé SSH auparavant.
+							<br>Pour cela ouvrez un terminal (GitBash pour Windows) et taper la commande suivante :<br> 
+							<span class="commande">ls -al ~/.ssh</span>
+						</p>
+						<p>
+						Vérifiez si ce répertoire contient les fichiers suivants : id_dsa.pub ou id_rsa.pub.<br>
+						Si ce n’est pas le cas, il faudra alors générer une clé SSH.
+						</p>
+						<p>
+							Pour générer une nouvelle clé SSH, tapez la commande suivante :
+						</p>
+						<img class="lazy" src="images/ssh-keygen.png"/>
+						<p>
+							Vous serez amener à entrer une passphrase, il s’agit en fait d’une phrase familière pour vous qui vous servira de mot de passe. Ne l’oubliez pas ;).
+						</p>
+						<br><br>
+					</div>
+					<div class="subtitle">Ajouter votre clé ssh au ssh-agent
+					</div>
+					<div class="text">
+						<p>
+							Cette étape est nécessaire pour enregistrer votre clé ssh sur votre machine pour pouvoir la réutiliser. Tout d’abord, vérifiez si le ssh-agent est activé en tapant cette commande : 
+						</p>
+						<img class="lazy" src="images/ssh-agent.png"/>
+						<p>
+							Vous devez voir apparaître le pid de votre ssh-agent.<br>
+						Ensuite, il est temps d’ajouter votre clé au ssh-agent : 
+						</p>
+						<img class="lazy" src="images/ssh-add.png"/>
+					</div>
+					<div class="subtitle">Entrer sa clé ssh sur Github
+					</div>
+					<div class="text">
+						<p>
+							Maintenant il faut rentrer sa clé ssh sur Github pour que l’association entre votre machine et le serveur Github où se trouvera votre projet soit complète.<br>
+							Pour ajouter votre clé il faut déjà la copier. Vous pouvez l’afficher et la copier à la main mais il existe une commande qui vous permettra de la copier plus simplement : 
+						</p>
+						<img class="lazy" src="images/pbcopy.png"/>
+						<p>
+							Rendez-vous maintenant sur votre compte Github.<br>
+							En haut à droite de n’importe quelle page du site, cliquez sur votre photo associé à votre compte et cliquez sur “Settings”. 
+						</p>
+						<img class="lazy" src="images/settings.png"/>
+						<p>
+							Vous arriverez alors sur la page des paramètres de votre compte Github.<br>
+							Dans la barre de navigation latérale sur la gauche de la page, cliquez sur “SSH and GPG keys”.<br>
+							Dans la partie SSH Keys se trouvant sur la nouvelle page sur laquelle vous venez d’arriver, cliquez sur “New SSH Key”. Vous verrez alors un formulaire s’afficher un peu plus bas dans la page tel que celui-ci : 
+						</p>
+						<img class="lazy" src="images/formulaireSSH.png"/>
+						<p>
+							Dans le champ titre, entrez un titre correspondant à l’utilisation de votre clé.<br>
+							En effet ce titre peut s’avérer important car vous pouvez associer plusieurs clés SSH pour un compte Github (pour avoir plusieurs accès autre que seulement celui de votre ordinateur par exemple).
+						</p>
+						<p>
+							Enfin, dans le champ Key coller la clé que vous avez copiée précédemment grâce à la commande que nous vous avions indiquée.
+						</p>
+						<p>
+							Cliquez sur “Add SSH Key”.<br> 
+							Confirmez avec le mot de passe Github.<br>
+							Votre clé est maintenant enregistrée sur Github.
+						</p>
 					</div>
 				</div>
 			</section>

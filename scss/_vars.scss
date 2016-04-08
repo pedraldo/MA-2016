@@ -1,0 +1,32 @@
+/**
+ * Colors
+ */
+//@formatter:off
+$colors:  (
+        white:			#ffffff,
+        black:			#000000,
+        grey_sideral:	#1d1d1d,	// dark gray
+        grey_text:		#666666,
+        blue_lake:		#1c60be, 	// main color mini blue valthorens
+        green_mud:		#5a7255,	// main color mini green mudday
+        green_olive:	#3f503c,	// main color mini green mudday darken
+        brown_sand:		#d79247,	// main color mini brown dakar
+        red_brick:		#b33b22
+);
+//@formatter:on
+
+@function colors($name: white) {
+    @return map-get($colors, $name);
+}
+
+/**
+ *	Brakpoints
+ */
+$size-mini:  		420px !default;
+$size-mobile: 		600px !default;
+$size-tablet:      	768px !default;
+$size-tablet-plus: 	769px !default;
+$size-medium:       960px !default;
+$size-desktop:      1024px !default;
+$size-desktop_plus: 1300px !default;
+$size-large:      	1600px !default;
