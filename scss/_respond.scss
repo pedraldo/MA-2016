@@ -1,0 +1,59 @@
+
+@function to($size) {
+  @return unquote('and (max-width: #{$size - 1})');
+}
+@function from($size) {
+  @return unquote('and (min-width: #{$size})');
+}
+@function orientation($orientation) {
+  @return unquote('and (orientation: #{$orientation})');
+}
+
+
+
+@mixin respond($breakpoints...) {
+  $mediaquery: null;
+
+  @each $breakpoint in $breakpoints {
+    @if type-of($breakpoint) == list {
+      $respond: nth($breakpoint, 1);
+      $size:    nth($breakpoint, 2);
+
+      @if      $respond == 'from' { $breakpoint: from($size); }
+      @else if $respond == 'to'   { $breakpoint: to($size); }
+    }
+
+    $mediaquery: append($mediaquery, $breakpoint, space);
+  }
+
+  @media screen #{$mediaquery} {
+    @content;
+  }
+}
+
+// Generic names
+// ---------------------------------------------------
+
+// To queries
+$to-mini:             to($size-mini);
+$to-small:            to($size-tablet);
+$to-medium:           to($size-medium);
+$to-large:            to($size-large);
+
+// From queries
+$from-mini:           from($size-mini);
+$from-small:          from($size-tablet);
+$from-medium:         from($size-medium);
+$from-large:          from($size-large);
+
+// Others
+// ---------------------------------------------------
+
+// Container
+$size-container:        960px !default;
+$to-container:          to($size-container);
+$from-container:        from($size-container);
+
+// Orientation
+$portrait:              orientation(portrait);
+$landscape:             orientation(landscape);

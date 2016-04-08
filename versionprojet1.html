@@ -1,0 +1,202 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<link type="text/css" rel="stylesheet" href="css/style.css"/>
+	<link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, maximum-scale=1.0"/>
+	<title>Github pour les nuls</title>
+</head>
+
+<body class="article">
+	<div id="page-wrapper" class="lazy" data-original="./images/gitlanding.jpg">
+		<header id="header">
+			<h1>
+				<a href="index.html">Github pour les nuls</a>
+			</h1>
+			<nav id="nav">
+				<ul>
+					<li class="special">
+						<a href="#menu" class="menuToggle">
+						<span>Menu</span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<section id="banner">
+			<div class="wrapper">
+				<span class="title">Créer / Rejoindre un projet</span>
+			</div>
+		</section>
+		<div class="section-container">
+			<section class="section">
+				<div class="wrapper">
+					<div class="title">Créer un projet</div>
+					<div class="subtitle"></div>
+					<div class="text">
+					<p>
+						Pour créer un projet il faut initialement <a href="installconfig.html"> installer Git et se créer un compte GitHub </a>.
+					</p>
+
+					<p>
+						Ensuite, Il faut se rendre sur le site <a href="https://github.com">GitHUb </a> et se connecter. Rendez-vous sur votre profil comme ceci :	
+					</p>
+					<img class="lazy" src="./images/cpg1.png"/>
+					<p>
+						Puis se rendre dans “Reporitories” comme ceci :
+					</p>
+					<img class="lazy" src="./images/cpg2.png"/>
+					<p>
+						Ensuite, cliquer sur le bouton vert "New" à droite. Vous serez redirigé sur cette page :
+					</p>
+					<img class="lazy" src="./images/cpg3.png"/>
+					<p>
+						Renseignez le nom de votre projet (obligatoire) et sa description si vous le souhaitez. 
+					</p>
+					<p>
+						Les deux boutons d’en dessous signifie que votre projet sera public ou privé c’est-à-dire accessible par d’autres utilisateurs ou pas. La version privée nécessite un compte payant, il est donc recommandé de mettre public pour la suite du tutoriel.
+					</p>
+					<p>
+						La case suivante permet de rajouter un fichier README qui permet à l’utilisateur de mettre une description du projet ou des instructions à effectuer avant le démarrage de celui ci par exemple.
+					</p>
+					<p>
+						Vient ensuite les deux menus déroulant permettant de rajouter respectivement un fichier .gitignore et d’ajouter une licence au projet.
+					</p>
+					<img class="lazy" src="./images/cpg4.png"/>
+					<img class="lazy" src="./images/cpg5.png"/>
+					<p>
+						Pour le fichier .gitignore, cela permet d’ignorer certains types de fichiers ou dossiers lors du “push” de votre projet sur GitHub. (Pour comprendre ce qu’est un <a href="versionprojet2.html">“push”</a> veuillez lire la description dans le lien)
+					</p>
+					<p>
+						L’autre menu déroulant permet de rajouter les différentes licences de votre projet.
+					</p>
+					<p>
+						Une fois tout ceci configuré comme vous le souhaitez, vous n’avez plus qu’à cliquer sur le bouton vert “Create repository”. 
+					</p>
+					<p>
+						Rendez vous dans votre répertoire où vous voulez développer votre projet. Ouvrez un terminal et rentrez cette commande pour lier votre projet et le dépot sur GitHub :
+					</p>
+					<img class="lazy" src="./images/cpg6.png"/>
+					<p>
+						Et voila vous avez créer votre propre projet.
+					</p>
+					</div>
+				</div>
+			</section>
+			<section class="section">
+				<div class="wrapper">
+					<div class="title">Rejoindre un projet</div>
+					<div class="subtitle">Comment rejoindre un projet ?</div>
+					<div class="text">
+					<p>
+					Si vous ne souhaiter pas créer votre propre projet mais participer à un projet, 
+                    vous avez la possibilité de rejoindre un projet existant d’un autre utilisateur de plusieurs manière : 	
+                        <ul>
+                            <li>
+                                En tant que collaborateur (utiliser par les équipes, quand on conait le propriétaire du répertoire sur github)
+                            </li>
+                            <li>
+                                En tant que contributeur (on veut proposer des modifications sur un projet)
+                            </li>
+                        </ul>
+                    </p>
+
+					<p>
+                            <b> Collaborateur : </b><br/>
+                        Pour être considéré comme collaborateur, il faut que le propriétaire du répertoire nous ai préalablement invité. 
+                        Vous recevrez un mail avec un lien directement vers le répertoire en question. Ensuite c’est très simple :
+                        <ul>
+                            <li>
+                                Suivez le lien pour vous rendre sur la page du répository du projet et copier l’adresse du repository <br/>
+                                <img class="lazy" src="./images/rpg1.png"/>
+                            </li>
+                            <li>
+                                Ouvrez la console git et rendez vous à l’endroit où vous voulez importer le répository
+                            </li>
+                            <li>
+                                Entrez la commande git clone suivi de l’url du projet récupéré sur github <br/>
+                                <img class="lazy" src="./images/rpg2.png"/>
+                            </li>
+                            <li>
+                                Appuyer sur Entrer et votre clone local sera créé. Vous êtes prêt à travailler ! <br/>
+                                <img class="lazy" src="./images/rpg3.png"/>
+                            </li>
+                        </ul>
+                    </p>
+                    
+                    <p>
+                            <b> Contributeur : </b><br/>
+                        Contrairement au cas précédent, ici nous ne pouvons pas transmettre nos modifications directement dans le repository d’origine. 
+                        Nous allons donc copier ce repository dans notre espace de travail afin d’apporter des modifications. 
+                        <ul>
+                            <li>
+                                Rendez-vous sur la page du projet et cliquer sur le bouton fork afin de récupérer le projet sur votre espace GitHub <br/>
+                                <img class="lazy" src="./images/rpg4.png"/>
+                            </li>
+                            <li>
+                                Il faut ensuite importer le projet en local et définir le remote (la source sur GitHub) <br/>
+                                <img class="lazy" src="./images/rpg5.png"/> <br/>
+                                <img class="lazy" src="./images/rpg6.png"/> 
+                            </li>
+                            <li>
+                                Vous pouvez créer une nouvelle branche ce n’est pas obligatoire mais recommandé afin de garder une meilleure visibilité 
+                                sur les modifications apportées au projet <br/>
+                                <img class="lazy" src="./images/rpg7.png"/>
+                            </li>
+                            <li>
+                                Vous voilà prêt à travailler sur le projet !
+                            </li>
+                        </ul>
+                    </p>
+					</div>
+				</div>
+			</section>
+			<section class="prevnext">
+                <a href="installconfig.html" class="cta prev">Installation/Configuration</a>
+				<a href="versionprojet2.html" class="cta next">Versioner son projet (2)</a>
+			</section>
+		</div>
+		<footer id="footer">
+			<div class="wrapper">
+				<div class="auteurs">
+					<ul>
+						<li>Auteurs</li>
+						<li>Pierre Peinado</li>
+						<li>Ernesto Markeliny</li>
+						<li>Benjamin Martel</li>
+						<li>Nicolas De Smet</li>
+					</ul>
+				</div>
+				<div class="projet">
+					<span class="contexte">Contexte</span>
+					<span class="description">Ce site a été réalisé dans le cadre d'un projet de Méthodes Agiles au sein de l'université Paul Sabatier de Toulouse</span>
+					<span class="prof">Encadrant : Franck Silvestre</span>
+					<div class="container">
+						<img src="./images/logoups.jpg"/>
+					</div>
+				</div>
+				<div class="copyright">
+					<span class="text">©Copyright - Tous droits réservés</span>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<script type="text/javascript" src="js/vendor/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="js/vendor/jquery.lazyload.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+
+	<div id="menu">
+		<ul>
+			<li><a href="index.html">Accueil</a></li>
+			<li><a href="installconfig.html">Installation / Configuration</a></li>
+			<li><a href="versionprojet1.html">Versioner son projet (1)</a></li>
+			<li><a href="versionprojet2.html">Versioner son projet (2)</a></li>
+			<li><a href="astuces.html">Astuces</a></li>
+		</ul>
+		<a href="#" class="close"></a>
+	</div>
+</body>
+
+</html>
