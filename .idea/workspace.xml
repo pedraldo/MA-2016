@@ -2,21 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d55faaf-132f-487d-aada-15b4483f75f1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/formulaireSSH.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/pbcopy.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/settings.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/ssh-add.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/ssh-agent.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/ssh-keygen.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scss/_helpers.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scss/_respond.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scss/_vars.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scss/style.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/_home.scss" afterPath="$PROJECT_DIR$/scss/_home.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/installconfig.html" afterPath="$PROJECT_DIR$/installconfig.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/versionprojet1.html" afterPath="$PROJECT_DIR$/versionprojet1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/versionprojet2.html" afterPath="$PROJECT_DIR$/versionprojet2.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="MA-2016.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,21 +27,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="1785">
-              <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+            <state vertical-scroll-proportion="0.95086706" vertical-offset="657" max-vertical-offset="1989">
+              <caret line="58" column="59" selection-start-line="58" selection-start-column="59" selection-end-line="58" selection-end-column="59" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="versionprojet1.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="versionprojet1.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/versionprojet1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.433526" vertical-offset="2918" max-vertical-offset="3519">
+            <state vertical-scroll-proportion="112.23077" vertical-offset="2918" max-vertical-offset="3519">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="170">
+              <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -68,6 +66,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/index.html" />
+      </list>
+    </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
@@ -236,20 +242,23 @@
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="7d55faaf-132f-487d-aada-15b4483f75f1" name="Default" comment="" />
       <created>1460126479240</created>
       <updated>1460126479240</updated>
-      <workItem from="1460126480015" duration="1090000" />
+      <workItem from="1460126480015" duration="4360000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1090000" />
+    <option name="totallyTimeSpent" value="4360000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -299,18 +308,26 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/versionprojet1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="1785">
-          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+        <state vertical-scroll-proportion="112.23077" vertical-offset="2918" max-vertical-offset="3519">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/versionprojet1.html">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.433526" vertical-offset="2918" max-vertical-offset="3519">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="170">
+          <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.95086706" vertical-offset="657" max-vertical-offset="1989">
+          <caret line="58" column="59" selection-start-line="58" selection-start-column="59" selection-end-line="58" selection-end-column="59" />
           <folding />
         </state>
       </provider>
